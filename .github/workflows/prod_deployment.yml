@@ -8,6 +8,9 @@ jobs:
     timeout-minutes: 5
     steps:
       - uses: actions/checkout@v2
+      - name: Remove useless files
+        run: |
+          rm -fr .git .github
       - name: Upload Files
         id: upload
         uses: Creepios/sftp-action@v1.0.3
