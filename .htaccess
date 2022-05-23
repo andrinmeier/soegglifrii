@@ -1,0 +1,8 @@
+RewriteEngine On
+RewriteBase /
+
+RewriteCond %{HTTPS} off
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+RewriteCond %{HTTP_HOST} !^www.soegglifrii.ch$ [NC]
+RewriteRule ^(.*)$ https://www.soegglifrii.ch/$1 [L,R=301]
