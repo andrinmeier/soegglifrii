@@ -16,13 +16,16 @@ jobs:
       - name: Remove useless files
         run: |
           rm -fr .git .github
-      - name: Upload Files
-        id: upload
-        uses: Creepios/sftp-action@v1.0.3
+      - name: Upload to Hoststar
+        uses: SamKirkland/FTP-Deploy-Action@4.3.0
         with:
-          host: ${{ secrets.FTP_HOST }}
-          port: 5544
+          server: ${{ secrets.FTP_HOST }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          localPath: '.'
-          remotePath: ${{ secrets.FTP_UPLOAD_DIR }}
+          protocol: ftp
+          port: 21
+          exclude: |
+            **/.git*
+            **/.git*/**
+          server-dir: ${{ secrets.FTP_UPLOAD_DIR }}
+          log-level: verbose
