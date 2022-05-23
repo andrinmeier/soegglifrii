@@ -8,17 +8,13 @@ jobs:
     timeout-minutes: 5
     steps:
       - uses: actions/checkout@v2
-      - name: Upload to Hoststar
-        uses: SamKirkland/FTP-Deploy-Action@4.3.0
+      - name: Upload Files
+        id: upload
+        uses: Creepios/sftp-action@v1.0.3
         with:
-          server: ${{ secrets.FTP_HOST }}
+          host: ${{ secrets.FTP_HOST }}
+          port: 5544
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          protocol: ftps-legacy
-          port: 21
-          exclude: |
-            **/.git*
-            **/.git*/**
-          server-dir: ${{ secrets.FTP_UPLOAD_DIR }}
-          dry-run: true
-          log-level: verbose
+          localPath: '.'
+          remotePath: ${{ secrets.FTP_UPLOAD_DIR }}
