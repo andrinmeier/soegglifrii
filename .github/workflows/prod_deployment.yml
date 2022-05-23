@@ -19,3 +19,4 @@ jobs:
             **/.git*/**
           server-dir: ${{ secrets.FTP_UPLOAD_DIR }}
           dry-run: true
+          log-level: verbose
