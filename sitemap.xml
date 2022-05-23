@@ -1,62 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+      xmlns="https://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="https://www.sitemaps.org/schemas/sitemap/0.9
+            https://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <url>
-  <loc>http://www.soegglifrii.ch/</loc>
-  <lastmod>2022-05-23T15:07:18+00:00</lastmod>
+  <loc>https://www.soegglifrii.ch/</loc>
+  <lastmod>2022-05-23T17:05:18+00:00</lastmod>
   <changefreq>monthly</changefreq>
 </url>
 <url>
-  <loc>http://www.soegglifrii.ch/index.html</loc>
-  <lastmod>2022-05-23T15:07:18+00:00</lastmod>
+  <loc>https://www.soegglifrii.ch/index.html</loc>
+  <lastmod>2022-05-23T17:05:18+00:00</lastmod>
   <changefreq>monthly</changefreq>
 </url>
 <url>
-  <loc>http://www.soegglifrii.ch/fussreflexzonen/theorie.html</loc>
-  <lastmod>2022-05-23T15:07:05+00:00</lastmod>
+  <loc>https://www.soegglifrii.ch/fussreflexzonen/theorie.html</loc>
+  <lastmod>2022-05-23T17:05:05+00:00</lastmod>
   <changefreq>monthly</changefreq>
 </url>
 <url>
-  <loc>http://www.soegglifrii.ch/fussreflexzonen/krankheiten.html</loc>
-  <lastmod>2022-05-23T15:07:04+00:00</lastmod>
+  <loc>https://www.soegglifrii.ch/fussreflexzonen/krankheiten.html</loc>
+  <lastmod>2022-05-23T17:05:04+00:00</lastmod>
   <changefreq>monthly</changefreq>
 </url>
 <url>
-  <loc>http://www.soegglifrii.ch/fussreflexzonen/geschichte.html</loc>
-  <lastmod>2022-05-23T15:07:04+00:00</lastmod>
+  <loc>https://www.soegglifrii.ch/fussreflexzonen/geschichte.html</loc>
+  <lastmod>2022-05-23T17:05:04+00:00</lastmod>
   <changefreq>monthly</changefreq>
 </url>
 <url>
-  <loc>http://www.soegglifrii.ch/angebot/behandlungsarten.html</loc>
-  <lastmod>2022-05-23T15:07:01+00:00</lastmod>
+  <loc>https://www.soegglifrii.ch/angebot/behandlungsarten.html</loc>
+  <lastmod>2022-05-23T17:05:01+00:00</lastmod>
   <changefreq>monthly</changefreq>
 </url>
 <url>
-  <loc>http://www.soegglifrii.ch/angebot/preise.html</loc>
-  <lastmod>2022-05-23T15:07:02+00:00</lastmod>
+  <loc>https://www.soegglifrii.ch/angebot/preise.html</loc>
+  <lastmod>2022-05-23T17:05:02+00:00</lastmod>
   <changefreq>monthly</changefreq>
 </url>
 <url>
-  <loc>http://www.soegglifrii.ch/angebot/krankenkassen.html</loc>
-  <lastmod>2022-05-23T15:07:01+00:00</lastmod>
+  <loc>https://www.soegglifrii.ch/angebot/krankenkassen.html</loc>
+  <lastmod>2022-05-23T17:05:01+00:00</lastmod>
   <changefreq>monthly</changefreq>
 </url>
 <url>
-  <loc>http://www.soegglifrii.ch/ueber.html</loc>
-  <lastmod>2022-05-23T15:07:19+00:00</lastmod>
+  <loc>https://www.soegglifrii.ch/ueber.html</loc>
+  <lastmod>2022-05-23T17:05:19+00:00</lastmod>
   <changefreq>monthly</changefreq>
 </url>
 <url>
-  <loc>http://www.soegglifrii.ch/kontakt.html</loc>
-  <lastmod>2022-05-23T15:07:18+00:00</lastmod>
+  <loc>https://www.soegglifrii.ch/kontakt.html</loc>
+  <lastmod>2022-05-23T17:05:18+00:00</lastmod>
   <changefreq>monthly</changefreq>
 </url>
 <url>
-  <loc>http://www.soegglifrii.ch/impressum.html</loc>
-  <lastmod>2022-05-23T15:07:17+00:00</lastmod>
+  <loc>https://www.soegglifrii.ch/impressum.html</loc>
+  <lastmod>2022-05-23T17:05:17+00:00</lastmod>
   <changefreq>monthly</changefreq>
 </url>
 </urlset>
