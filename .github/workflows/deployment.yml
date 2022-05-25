@@ -1,0 +1,21 @@
+name: deployment
+on: workflow_dispatch
+jobs:
+  runtests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install dependencies
+        run: |
+          pip install paramiko
+      - name: Deploy to hosting provider
+        env:
+          DEPLOYMENT_LOCAL_PATH: ${{ secrets.DEPLOYMENT_LOCAL_PATH }}
+          DEPLOYMENT_REMOTE_PATH: ${{ secrets.DEPLOYMENT_REMOTE_PATH }}
+          DEPLOYMENT_HOST: ${{ secrets.DEPLOYMENT_HOST }}
+          DEPLOYMENT_PORT: ${{ secrets.DEPLOYMENT_PORT }}
+          DEPLOYMENT_USERNAME: ${{ secrets.DEPLOYMENT_USERNAME }}
+          DEPLOYMENT_PASSWORD: ${{ secrets.DEPLOYMENT_PASSWORD }}
+          DEPLOYMENT_EXCLUDED_DIRS: ${{ secrets.DEPLOYMENT_EXCLUDED_DIRS }}
+        run: |
+          python deploy_site.py
