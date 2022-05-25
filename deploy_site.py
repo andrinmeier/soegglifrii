@@ -24,7 +24,7 @@ def get_env_int(key) -> str:
     if key not in os.environ:
         return -1
     value = os.environ[key]
-    if not value.isdigt():
+    if not value.isdigit():
         raise Exception(f"Expected ENV.{key} to be a number.")
     return int(value)
 
