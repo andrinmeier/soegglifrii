@@ -726,7 +726,7 @@ body {
 
 @media (min-width:61rem) {
     .nav-icon {
-        display: none
+        display: none;
     }
     .nav {
         display: block;
