@@ -59,7 +59,6 @@ try:
     transport.connect(username=USERNAME, password=PASSWORD)
     sftp = MySFTPClient.from_transport(transport)
     sftp.put_dir(local_path, remote_path, excluded_dirs=excluded_dirs)
-    sftp.close()
 except Exception as ex:
     print("Deployment failed.")
     print(repr(ex))
