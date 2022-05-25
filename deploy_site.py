@@ -1,6 +1,7 @@
 import os
 from typing import List
 import paramiko
+import sys
 
 class MySFTPClient(paramiko.SFTPClient):
     def put_dir(self, source, target, excluded_dirs: List[str] = []):
@@ -53,6 +54,7 @@ try:
 except Exception as ex:
     print("Deployment failed.")
     print(repr(ex))
+    sys.exit(1)
 finally:
     if sftp is not None:
         sftp.close()
