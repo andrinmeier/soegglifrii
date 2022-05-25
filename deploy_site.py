@@ -15,6 +15,15 @@ class MySFTPClient(paramiko.SFTPClient):
                 self.mkdir('%s/%s' % (target, item), ignore_existing=True)
                 self.put_dir(os.path.join(source, item), '%s/%s' % (target, item))
 
+    def mkdir(self, path, mode=511, ignore_existing=False):
+        try:
+            super(MySFTPClient, self).mkdir(path, mode)
+        except IOError:
+            if ignore_existing:
+                pass
+            else:
+                raise
+
 def get_env_str(key) -> str:
     if key not in os.environ:
         return ""
