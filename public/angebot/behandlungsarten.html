@@ -7,8 +7,8 @@
     <meta name="description" content="Die Fussreflexzonentherapie behandelt durch die Stimulierung der Füsse verschiedene Organe und Körperzonen. Die reflektorische Lymphbehandlung, neurolymphatische Reflextherapie sowie die Bioresonanz sind Erweiterungen davon.">
     <title>Angebotene Behandlungsarten | Sögglifrii</title>
     <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
-    <link rel="stylesheet" href="../css/style.min.css">
-    <script src="../js/jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="../assets/css/style.min.css">
+    <script src="../assets/js/jquery-3.5.1.min.js"></script>
     <script defer data-domain="soegglifrii.ch" src="https://plausible.io/js/plausible.js"></script>
 
     <meta property="og:title" content="Sögglifrii. Fussreflexzonentherapie in Näfels." />
@@ -17,21 +17,21 @@
     <meta property="og:url" content="https://www.soegglifrii.ch/behandlungsarten.html" />
     <meta property="og:image:width" content="792" />
     <meta property="og:image:height" content="391" />
-    <meta property="og:image" content="https://www.soegglifrii.ch/img/herounit.jpg" />
+    <meta property="og:image" content="https://www.soegglifrii.ch/assets/img/herounit.jpg" />
 
     <meta name="twitter:card" content="summary" />
     <meta property="twitter:domain" content="www.soegglifrii.ch">
     <meta property="twitter:url" content="https://www.soegglifrii.ch/behandlungsarten.html">
     <meta property="twitter:title" content="Sögglifrii. Fussreflexzonentherapie in Näfels." />
     <meta property="twitter:description" content="Die Sögglifrii-Praxis in Näfels bietet eine professionelle Fussreflexzonentherapie an und wird geführt von Erika Meier."/>
-    <meta name="twitter:image" content="https://www.soegglifrii.ch/img/herounit.jpg">
+    <meta name="twitter:image" content="https://www.soegglifrii.ch/assets/img/herounit.jpg">
 </head>
 
 <body>
     <header class="page-row" itemscope itemtype="https://schema.org/WPHeader">
         <div class="wrap clearfix bar">
             <div class="brand">
-                <a href="/" title="Zur Startseite gehen"><img src="../img/logo.jpg" height="45" width="45" alt="Sögglifrii Logo" class="brand-logo"></a>
+                <a href="/" title="Zur Startseite gehen"><img src="../assets/img/logo.jpg" height="45" width="45" alt="Sögglifrii Logo" class="brand-logo"></a>
                 <p class="brand-title"><a href="/" itemprop="headline">Sögglifrii</a></p>
             </div>
             <nav itemscope itemtype="https://schema.org/SiteNavigationElement">
@@ -80,7 +80,7 @@
                         <p>Ausserdem behandle ich nach der Methode von Ortho Bionomy.</p>
                         <p>Für mehr Informationen ist das Buch <a href="https://www.amazon.de/Weiche-manuelle-Techniken-Ortho-Bionomy-Praktisches/dp/383049131X">Weiche manuelle Techniken der Ortho-Bionomy: Praktisches Lehrbuch von Klaus G. Weber und Michaela Wiese</a>                            sehr hilfreich.
                             <h2>Bioresonanz</h2>
-                            <a href="../img/bioresonanz_geraet_large.jpg" class="js-swipebox" title="Bioresonanz Gerät"><img src="../img/bioresonanz_geraet_small.jpg" alt="Bioresonanz Gerät" class="left article-image"></a>
+                            <a href="../assets/img/bioresonanz_geraet_large.jpg" class="js-swipebox" title="Bioresonanz Gerät"><img src="../assets/img/bioresonanz_geraet_small.jpg" alt="Bioresonanz Gerät" class="left article-image"></a>
                             <p>Die Wirkung der Bioresonanztherapie erklärt sich durch die modernen Erkenntnisse der Quantenphysik. Die Quantenphysik befasst sich mit den Teilchen- und Welleneigenschaften von Atomen und deren Wechselwirkungen. Vergeben wurde
                                 der Nobelpreis für Physik 1984 für die Entdeckung von Energieteilchen, die über 99% aller Materie ausmachen. Diese Energieteilchen vermitteln im Körper elektromagnetische Impulse, die einen großen Teil der körperlichen
                                 Abläufe steuern. Das wird auch „Zellkommunikation“ genannt. Jedes Organ hat seine eigene gesunde elektromagnetische Schwingung und ein krankes Organ hat eine davon abweichende Schwingung. Jede zuträgliche oder die Gesundheit
@@ -133,29 +133,7 @@
             </div>
         </div>
     </footer>
-    <script>
-        $(document).ready(function(e) {
-            var t = e(".js-swipebox");
-            "function" == typeof t.swipebox && t.swipebox();
-            var n = e(".js-subnav-trigger");
-            n.click(function(t) {
-                t.preventDefault();
-                var n = e(this).find(".nav-subnav-action"),
-                    i = n.parent().parent().children(".nav-subnav");
-                n.parent();
-                return i.hasClass("nav-subnav-isopen") ?
-                    (i.removeClass("nav-subnav-isopen"), void n.html("+")) :
-                    (e(".nav-subnav").removeClass("nav-subnav-isopen"), e(".nav-subnav-action").html("+"), i.addClass("nav-subnav-isopen"), n.html("-"), !1);
-            });
-            var i = e(".nav-icon"),
-                r = e(".nav");
-            i.click(function() {
-                "none" === r.css("display") ?
-                    (r.addClass("show"), i.removeClass("closed").addClass("open"), i.children(".fa").removeClass("fa-navicon").addClass("fa-close")) :
-                    (r.removeClass("show"), i.removeClass("open").addClass("closed"), i.children(".fa").removeClass("fa-close").addClass("fa-navicon"));
-            });
-        });
-    </script>
+    <script src="../assets/js/navigation.js"></script>
 </body>
 
 </html>
